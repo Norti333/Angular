@@ -1,0 +1,32 @@
+.btn-default {
+    background-color: red;
+    height: 5%;
+    width: 6%;
+    border: 1px solid;
+    border-radius: 0px
+}
+.safe {
+    background-color: lightblue;
+    text-align: right;
+    font-size: smaller;
+    padding-top: 8px;
+    padding-right: 2px;
+}
+.path {
+    background-color: green;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 10%;
+    background-color: #f1f1f1;
+    height: 100%;
+    position: fixed;
+    overflow: auto;
+}
+
+.container {
+    padding-top: 10%;
+    margin-left: 16%;
+}

@@ -1,0 +1,25 @@
+<head>
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+        crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body ng-app="myApp" ng-controller="playerCtrl">
+    <ul ng-init="handleStart()">
+        <button type="button" class="btn btn-primary" ng-class="startChange.start.change" ng-click="AssignStart()">Assign Start</button>
+        <button type="button" class="btn btn-danger" ng-class="startChange.start.end" ng-click="assignEnd()">Assign end</button>
+        <button type="button" class="btn btn-success" ng-class="startChange.start.end" ng-click="getPath()"> Go</button>
+    </ul>
+    <div class='container'>
+        <div class="row" ng-repeat="row in table track by $index">
+            <button ng-repeat="square in row track by $index" type="button" class="btn-default btn" ng-click="changeButton()" ng-class="this.square.class">{{square.position}}</button>
+        </div>
+    </div>
+
+    <script src="./node_modules/angular/angular.js"></script>
+    <script src="app.js"></script>
+    <script src="playCtrl.js"></script>
+    <script src="factory.js"></script>
+</body>
+
+</html>
